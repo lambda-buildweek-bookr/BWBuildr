@@ -78,11 +78,6 @@ input, select, textarea {
 		background: #fff;
 	}
 
-		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
-			animation: none !important;
-			transition: none !important;
-		}
-
 	body, input, select, textarea {
 		color: #a2a2a2;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
@@ -416,7 +411,14 @@ ul.icons {
             font-size: 1.5em;
         }
 
-/* Work Item */
+/* Place Holder */
+
+.row {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .work-item {
     margin: 0 0 2em 0;
