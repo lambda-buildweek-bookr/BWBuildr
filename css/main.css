@@ -85,18 +85,8 @@ input, select, textarea {
 		line-height: 26px;
 	}
 
-	strong, b {
-		color: #787878;
-		font-weight: 400;
-	}
-
-	p {
-		margin: 0 0 32px 0;
-	}
-
 	h1, h2, h3, h4, h5, h6 {
 		color: #787878;
-		font-weight: 400;
 		line-height: 16px;
 		margin: 0 0 16px 0;
 	}
@@ -116,20 +106,14 @@ input, select, textarea {
 		line-height: 24px;
 	}
 
-	header {
-		border: 0;
-		border-bottom: solid 2px #efefef;
-		margin: 32px 0;
+	header .head {
+		margin: 48px 0;
 	}
-
-		header .head {
-			margin: 48px 0;
-		}
 
 /*Content*/
 
 header p {
-	color: #b2b2b2;
+	color: #a2a2a2;
 	position: relative;
 	margin: 0 0 24px 0;
 }
@@ -153,18 +137,17 @@ header p {
 
     .work-item h3 {
         font-size: 24px;
-        margin: 0 0 8px 0;
+        margin: 12px 0 8px 0;
     }
 
     .work-item p {
         font-size: 16px;
         line-height: 24px;
-        margin: 0;
     }
 
 /* Header */
 
-#header {
+.header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -175,20 +158,14 @@ header p {
     background-repeat: no-repeat;
     background-size: auto;
     height: 100%;
-    left: 0;
     padding: 128px 64px;
     position: fixed;
     text-align: right;
-    top: 0;
     width: 20%;
 }
 
-    #header strong {
-        color: #ffffff;
-    }
-
-    #header h1 {
-        color: rgba(255, 255, 255, 0.5);
+    .header h1 {
+        color: white;
         font-size: 42px;
         line-height: 48px;
         margin: 0;
@@ -196,7 +173,7 @@ header p {
 
 /* Main */
 
-#main {
+.main {
     margin-left: 20%;
     margin-right: 20%;
     max-width: 100%;
@@ -204,25 +181,21 @@ header p {
     width: calc(100% - 40%);
 }
 
-    #main section {
+    .main section {
         border-top: solid 2px #efefef;
         margin: 64px 0 0 0;
         padding: 64px 0 0 0;
     }
 
-    #main #one {
+    .main .intro {
         border-top: 0;
         margin-top: 0;
         padding-top: 0;
         font-size: 20px;
     }
 
-#right-side {
+.right-side {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    background-attachment: scroll;
     background-image: url("../../images/bookcase.jpg");
     background-position: top right;
     background-repeat: no-repeat;
@@ -231,5 +204,5 @@ header p {
     height: 100%;
     width: 20%;
     position: fixed;
-
 }
+
