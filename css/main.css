@@ -112,11 +112,6 @@ input, select, textarea {
 		margin: 0 0 1em 0;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
-			text-decoration: none;
-		}
-
 	h1 {
 		font-size: 2em;
 		line-height: 1.5em;
@@ -132,18 +127,6 @@ input, select, textarea {
 		line-height: 1.5em;
 	}
 
-	sub {
-		font-size: 0.8em;
-		position: relative;
-		top: 0.5em;
-	}
-
-	sup {
-		font-size: 0.8em;
-		position: relative;
-		top: -0.5em;
-	}
-
 	header {
 		border: 0;
 		border-bottom: solid 2px #efefef;
@@ -153,18 +136,6 @@ input, select, textarea {
 		header .head {
 			margin: 3em 0;
 		}
-
-	.align-left {
-		text-align: left;
-	}
-
-	.align-center {
-		text-align: center;
-	}
-
-	.align-right {
-		text-align: right;
-	}
 
 /*Content*/
 
@@ -247,7 +218,7 @@ ul.icons {
     position: fixed;
     text-align: right;
     top: 0;
-    width: 35%;
+    width: 20%;
 }
 
     #header strong {
@@ -275,10 +246,11 @@ ul.icons {
 /* Main */
 
 #main {
-    margin-left: 35%;
+    margin-left: 20%;
+    margin-right: 20%;
     max-width: 54em;
-    padding: 8em 4em 4em 4em;
-    width: calc(100% - 35%);
+    padding: 2em 4em 4em 4em;
+    width: calc(100% - 40%);
 }
 
     #main section {
@@ -292,3 +264,20 @@ ul.icons {
             margin-top: 0;
             padding-top: 0;
         }
+
+#right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-attachment: scroll;
+    background-image: url("../../images/bookcase.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin-left: 80%;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+
+}
