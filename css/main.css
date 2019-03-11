@@ -1,45 +1,50 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
-
-article, aside, details, figcaption, figure,
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;}
-
+	display: block;
+}
 body {
 	line-height: 1;
 }
-
 ol, ul {
 	list-style: none;
 }
-
 blockquote, q {
 	quotes: none;
 }
-
-	blockquote:before, blockquote:after, q:before, q:after {
-		content: '';
-		content: none;
-	}
-
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -75,66 +80,50 @@ input, select, textarea {
 	body, input, select, textarea {
 		color: #a2a2a2;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
+		font-size: 24px;
 		font-weight: 400;
-		line-height: 1.75em;
+		line-height: 26px;
 	}
-
-	a {
-		transition: color 0.2s ease-in-out;
-		color: #49bf9d;
-		text-decoration: none;
-	}
-
-		a:hover {
-			border-bottom-color: transparent;
-			color: #49bf9d;
-			text-decoration: none;
-		}
 
 	strong, b {
 		color: #787878;
 		font-weight: 400;
 	}
 
-	em, i {
-		font-style: italic;
-	}
-
 	p {
-		margin: 0 0 2em 0;
+		margin: 0 0 32px 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #787878;
 		font-weight: 400;
-		line-height: 1em;
-		margin: 0 0 1em 0;
+		line-height: 16px;
+		margin: 0 0 16px 0;
 	}
 
 	h1 {
-		font-size: 2em;
-		line-height: 1.5em;
+		font-size: 32px;
+		line-height: 24px;
 	}
 
 	h2 {
-		font-size: 1.5em;
-		line-height: 1.5em;
+		font-size: 32px;
+		line-height: 32px;
 	}
 
 	h3 {
-		font-size: 1.25em;
-		line-height: 1.5em;
+		font-size: 20px;
+		line-height: 24px;
 	}
 
 	header {
 		border: 0;
 		border-bottom: solid 2px #efefef;
-		margin: 2em 0;
+		margin: 32px 0;
 	}
 
 		header .head {
-			margin: 3em 0;
+			margin: 48px 0;
 		}
 
 /*Content*/
@@ -142,35 +131,8 @@ input, select, textarea {
 header p {
 	color: #b2b2b2;
 	position: relative;
-	margin: 0 0 1.5em 0;
+	margin: 0 0 24px 0;
 }
-header h2 + p {
-	font-size: 1.25em;
-	margin-top: -1em;
-	line-height: 1.5em;
-}
-
-
-/* Icons */
-
-ul.icons {
-    cursor: default;
-    list-style: none;
-    padding-left: 0;
-}
-
-    ul.icons li {
-        display: inline-block;
-        padding: 0 1em 0 0;
-    }
-
-        ul.icons li:last-child {
-            padding-right: 0;
-        }
-
-        ul.icons li .icon:before {
-            font-size: 1.5em;
-        }
 
 /* Place Holder */
 
@@ -182,21 +144,21 @@ ul.icons {
 }
 
 .work-item {
-    margin: 0 0 2em 0;
+    margin: 0 0 32px 0;
 }
 
-    .work-item .image {
-        margin: 0 0 1.5em 0;
+    .work-item .img {
+        margin: 0 0 32px 0;
     }
 
     .work-item h3 {
-        font-size: 1em;
-        margin: 0 0 0.5em 0;
+        font-size: 24px;
+        margin: 0 0 8px 0;
     }
 
     .work-item p {
-        font-size: 0.8em;
-        line-height: 1.5em;
+        font-size: 16px;
+        line-height: 24px;
         margin: 0;
     }
 
@@ -214,7 +176,7 @@ ul.icons {
     background-size: auto;
     height: 100%;
     left: 0;
-    padding: 8em 4em;
+    padding: 128px 64px;
     position: fixed;
     text-align: right;
     top: 0;
@@ -227,20 +189,9 @@ ul.icons {
 
     #header h1 {
         color: rgba(255, 255, 255, 0.5);
-        font-size: 2em;
-        line-height: 1.75em;
+        font-size: 42px;
+        line-height: 48px;
         margin: 0;
-    }
-
-/* icons? */
-
-.icons {
-    margin: 1em 0 0 0;
-}
-
-    .icons a {
-        color: rgba(255, 255, 255, 0.4);
-        text-decoration: none;
     }
 
 /* Main */
@@ -248,22 +199,23 @@ ul.icons {
 #main {
     margin-left: 20%;
     margin-right: 20%;
-    max-width: 54em;
-    padding: 2em 4em 4em 4em;
+    max-width: 100%;
+    padding: 32px 64px 64px 64px;
     width: calc(100% - 40%);
 }
 
     #main section {
         border-top: solid 2px #efefef;
-        margin: 4em 0 0 0;
-        padding: 4em 0 0 0;
+        margin: 64px 0 0 0;
+        padding: 64px 0 0 0;
     }
 
-        #main section:first-child {
-            border-top: 0;
-            margin-top: 0;
-            padding-top: 0;
-        }
+    #main #one {
+        border-top: 0;
+        margin-top: 0;
+        padding-top: 0;
+        font-size: 20px;
+    }
 
 #right-side {
     display: flex;
