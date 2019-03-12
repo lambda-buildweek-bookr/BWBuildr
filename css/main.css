@@ -147,16 +147,47 @@ a {
     width: 20%;
     position: fixed;
 }
-    
+
+    .right-side .nav-button {
+        margin: 10px;
+        display: flex;
+    }
+
+        .right-side .nav-button a {
+            margin-right: 10px;
+            position: absolute;
+            cursor: pointer;
+        }
+
 .nav {
-  display: flex;
-  justify-content: center;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 83%;
+    width: 10%;
+    height: 300px;
+    background-color: white;
+    border: 1px solid #004D40;
+    z-index: 2;
 }
-.nav nav {
-  display: flex;
-  justify-content: space-around;
-  width: 50%;
+
+    .nav nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .nav nav a{
+            list-style-type: none;
+            font-size: 32px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+.nav--open {
+    display: block;
 }
+/*------------------------------------------------------------*/
+
 
 .main {
     display: flex;
@@ -185,9 +216,13 @@ a {
         font-size: 20px;
     }
 
-    .main .intro .head h2 {
+    .main .intro h2 {
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .main .into p {
+        width: 500px;
     }
 
 .content h2 {
