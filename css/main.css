@@ -441,3 +441,26 @@ a {
         }
     }
 
+.smoot {
+    text-align: left;
+}
+
+@media( max-width: 500px ) {
+    .smoot {
+        text-align: center;
+    }
+}
+
+    .smoot img {
+        width: 20%;
+        height: auto;
+        margin: 10px;
+        padding: 10px;
+        border: double 5px lightgray;
+    }
+
+    @media( max-width: 500px ) {
+        .smoot img {
+            width: 50%;
+        }
+    }
