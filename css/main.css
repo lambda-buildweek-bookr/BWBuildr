@@ -226,7 +226,7 @@ a {
             }
         }
 
-.nav--open {
+.nav-open {
     display: block;
 }
 
@@ -440,3 +440,7 @@ a {
             width: 50%;
         }
     }
+
+.text-pop-up-top:hover {
+        animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}

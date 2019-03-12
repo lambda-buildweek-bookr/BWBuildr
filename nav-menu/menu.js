@@ -1,5 +1,5 @@
 const toggleNav = () => {
-    nav.classList.toggle('nav--open');
+    nav.classList.toggle('nav-open');
   };
   
   const nav = document.querySelector('.nav');
