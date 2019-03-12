@@ -115,6 +115,7 @@ a {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    top: 0;
     background-attachment: scroll;
     background-image: url("../../images/bookcase.jpg");
     background-position: top left;
@@ -138,6 +139,7 @@ a {
 
 .right-side {
     display: flex;
+    top: 0;
     background-image: url("../../images/bookcase.jpg");
     background-position: top right;
     background-repeat: no-repeat;
