@@ -101,7 +101,6 @@ header .head {
 
 a {
     text-decoration: none;
-    color: #49bf9d;
 }
 
 @media( max-width: 800px ) {

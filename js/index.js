@@ -14,3 +14,8 @@ sellImg.setAttribute('src', siteContent["pics"]["pic-2"]);
 
 const reviewImg = document.getElementById("review");
 reviewImg.setAttribute('src', siteContent["pics"]["pic-3"]);
+
+const anchor = document.querySelectorAll("a")
+anchor.forEach(x => {
+  x.style.color = "#49bf9d"
+});
