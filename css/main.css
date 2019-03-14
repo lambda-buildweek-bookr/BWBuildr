@@ -68,7 +68,7 @@ html {
 	box-sizing: inherit;
 }
 
-body, input, select, textarea {
+body, input, select, textarea, button {
 	color: #a2a2a2;
 	font-family: "Source Sans Pro", Helvetica, sans-serif;
 	font-size: 24px;
@@ -139,6 +139,20 @@ a {
     }
 }
 
+@media( max-width: 500px ) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        top: auto;
+        bottom: 0;
+        background-position:  right;
+        height: 15%;
+        width: 100%;
+        padding: 20px 10px;
+        text-align: left;
+    }
+}
+
     .header h1 {
         color: white;
     }
@@ -146,6 +160,8 @@ a {
     @media( max-width: 500px ) {
         .header h1 {
             font-size: 24px;
+            width: 30%;
+            line-height: 24px;
         }
     }
 
@@ -154,6 +170,11 @@ a {
         display: flex;
     }
 
+    @media( max-width: 500px ) {
+        .header .icons a {
+            display: inline;
+        }
+    }
 
 .right-side {
     display: flex;
@@ -166,6 +187,16 @@ a {
     height: 100%;
     width: 20%;
     position: fixed;
+}
+
+@media( max-width: 500px ) {
+    .right-side {
+        top: 0;
+        background-position: top;
+        margin-left: 0;
+        height: 9%;
+        width: 100%;
+    }
 }
 
     .right-side .nav-button {
@@ -199,7 +230,7 @@ a {
 
 @media( max-width: 500px ) {
     .nav {
-        left: 81%;
+        left: 1%;
         top: 50px;
         width: 15%;
     }
@@ -243,6 +274,11 @@ a {
 @media( max-width: 500px ) {
     .main {
         padding: 16px 32px 32px 32px;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 10%;
+        margin-bottom: 20%;
     }
 }
 
@@ -267,9 +303,83 @@ a {
         margin-bottom: 20px;
     }
 
-    .main .into p {
-        width: 500px;
+    .main .intro button {
+        font-size: 24px;
+        width: 200px;
+        height: 75px;
+        margin-top: 20px;
+        border-radius: 20px;
+        background-color: #49bf9d;
+        color: white;
+        cursor: pointer;
+        outline: none;
     }
+
+    .main .intro button:hover {
+        -webkit-animation: jello-horizontal 0.9s both;
+    }
+
+    @-webkit-keyframes jello-horizontal {
+        0% {
+          -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+        }
+        30% {
+          -webkit-transform: scale3d(1.25, 0.75, 1);
+                  transform: scale3d(1.25, 0.75, 1);
+        }
+        40% {
+          -webkit-transform: scale3d(0.75, 1.25, 1);
+                  transform: scale3d(0.75, 1.25, 1);
+        }
+        50% {
+          -webkit-transform: scale3d(1.15, 0.85, 1);
+                  transform: scale3d(1.15, 0.85, 1);
+        }
+        65% {
+          -webkit-transform: scale3d(0.95, 1.05, 1);
+                  transform: scale3d(0.95, 1.05, 1);
+        }
+        75% {
+          -webkit-transform: scale3d(1.05, 0.95, 1);
+                  transform: scale3d(1.05, 0.95, 1);
+        }
+        100% {
+          -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+        }
+      }
+      @keyframes jello-horizontal {
+        0% {
+          -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+        }
+        30% {
+          -webkit-transform: scale3d(1.25, 0.75, 1);
+                  transform: scale3d(1.25, 0.75, 1);
+        }
+        40% {
+          -webkit-transform: scale3d(0.75, 1.25, 1);
+                  transform: scale3d(0.75, 1.25, 1);
+        }
+        50% {
+          -webkit-transform: scale3d(1.15, 0.85, 1);
+                  transform: scale3d(1.15, 0.85, 1);
+        }
+        65% {
+          -webkit-transform: scale3d(0.95, 1.05, 1);
+                  transform: scale3d(0.95, 1.05, 1);
+        }
+        75% {
+          -webkit-transform: scale3d(1.05, 0.95, 1);
+                  transform: scale3d(1.05, 0.95, 1);
+        }
+        100% {
+          -webkit-transform: scale3d(1, 1, 1);
+                  transform: scale3d(1, 1, 1);
+        }
+      }
+      
 
 .content h2 {
     margin-bottom: 30px;
@@ -313,6 +423,15 @@ a {
     margin-top: 32px;
 }
 
+@media( max-width: 500px ) {
+    .us {
+        padding: 16px 32px 32px 32px;
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 20%;
+    }
+}
+
 .person {
     display: flex;
     margin: 16px 0;
@@ -322,10 +441,17 @@ a {
     border-bottom: solid 2px lightgray;
 }
 
-@media( max-width: 500px ) {
+@media( max-width: 800px ) {
     .person {
         flex-direction: column;
         width: 55%
+    }
+}
+
+@media( max-width: 500px ) {
+    .person {
+        flex-direction: column;
+        width: 100%
     }
 }
 
@@ -341,7 +467,7 @@ a {
     text-align: left;
 }
 
-@media( max-width: 500px ) {
+@media( max-width: 800px ) {
     .edward {
         text-align: center;
     }
@@ -355,7 +481,7 @@ a {
         border: double 5px lightgray;
     }
 
-    @media( max-width: 500px ) {
+    @media( max-width: 800px ) {
         .edward img {
             width: 50%;
         }
@@ -367,7 +493,7 @@ a {
     text-align: right;
 }
 
-@media( max-width: 500px ) {
+@media( max-width: 800px ) {
     .ilya {
         flex-direction: column;
         text-align: center;
@@ -382,7 +508,7 @@ a {
         border: double 5px lightgray;
     }
 
-    @media( max-width: 500px ) {
+    @media( max-width: 800px ) {
         .ilya img {
             width: 50%;
         }
@@ -392,7 +518,7 @@ a {
     text-align: left;
 }
 
-@media( max-width: 500px ) {
+@media( max-width: 800px ) {
     .davina {
         text-align: center;
     }
@@ -406,7 +532,7 @@ a {
         border: double 5px lightgray;
     }
 
-    @media( max-width: 500px ) {
+    @media( max-width: 800px ) {
         .davina img {
             width: 50%;
         }
@@ -418,7 +544,7 @@ a {
     text-align: right;
 }
 
-@media( max-width: 500px ) {
+@media( max-width: 800px ) {
     .jamie {
         flex-direction: column;
         text-align: center;
@@ -433,7 +559,7 @@ a {
         border: double 5px lightgray;
     }
 
-    @media( max-width: 500px ) {
+    @media( max-width: 800px ) {
         .jamie img {
             width: 50%;
         }
@@ -443,7 +569,7 @@ a {
     text-align: left;
 }
 
-@media( max-width: 500px ) {
+@media( max-width: 800px ) {
     .smoot {
         text-align: center;
     }
@@ -457,7 +583,7 @@ a {
         border: double 5px lightgray;
     }
 
-    @media( max-width: 500px ) {
+    @media( max-width: 800px ) {
         .smoot img {
             width: 50%;
         }
