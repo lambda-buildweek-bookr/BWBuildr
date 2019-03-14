@@ -143,7 +143,9 @@ a {
     .header {
         flex-direction: row;
         align-items: center;
-        background-position: top;
+        top: auto;
+        bottom: 0;
+        background-position:  right;
         height: 15%;
         width: 100%;
         padding: 20px 10px;
@@ -189,8 +191,8 @@ a {
 
 @media( max-width: 500px ) {
     .right-side {
-        top: auto;
-        bottom: 0;
+        top: 0;
+        background-position: top;
         margin-left: 0;
         height: 9%;
         width: 100%;
@@ -229,8 +231,7 @@ a {
 @media( max-width: 500px ) {
     .nav {
         left: 1%;
-        top: auto;
-        bottom: 10%;
+        top: 50px;
         width: 15%;
     }
 }
@@ -276,7 +277,7 @@ a {
         width: 100%;
         margin-left: 0%;
         margin-right: 0%;
-        margin-top: 20%;
+        margin-top: 10%;
         margin-bottom: 20%;
     }
 }
@@ -426,7 +427,7 @@ a {
     .us {
         padding: 16px 32px 32px 32px;
         width: 100%;
-        margin-top: 20%;
+        margin-top: 10%;
         margin-bottom: 20%;
     }
 }
